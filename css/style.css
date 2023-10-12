@@ -12,6 +12,9 @@ header {
     flex-direction: column;
 }
 
+.Input-field {
+    margin-bottom: 10px;
+}
 label {
     display: block;
     margin-bottom: 4px;
@@ -29,6 +32,12 @@ input {
 input:focus {
     border-color:#64CCC5 ;
 }
+.eq1{
+    text-align: left;
+}
+.buttons{
+    margin-bottom: 20px;
+}
 
 button{
     padding:10px 20px;
@@ -43,7 +52,6 @@ button{
 }
 
 
-}
 button:hover {
     background-color: #04364A;
     transform:translateY(1px);

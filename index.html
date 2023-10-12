@@ -5,22 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Suhu</title>
     <link rel="stylesheet" href="css/style.css">
+    <SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+    <SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
 </head>
 <body>
     <header>
-        <h1>KALKULATOR SUHU</h1>
+        <h1 id="head-title" class="title">KALKULATOR SUHU</h1>
     </header>
     <main>
+        <div>
         <section class="Input-section">
-            <label for="Input-field">Celcius</label>
-            <input id="Input-field" type="number" placeholder="Input rumus">
-            <div id="Input-button">
-                <button>konversi</button>
-                <button>reset</button>
-                <button>reverse</button>
+            <label id="label1" for="Input-field">Celcius</label>
+            <input id="InputCelcius" class="Input-field" type="number" placeholder="Input Angka">
+            <div class="buttons">
+                <button id="buttonConvert">Konversi</button>
+                <button id="buttonReset">Reset</button>
            
             </div>
         </section>
+
+        <section class="Input-section">
+            <label id="label2" for="Inputfahrenheit">Fahrenheit</label>
+            <input id="InputFahrenheit" class="Input-field" type="number" placeholder="Input Angka">
+        </section>     
+        
+        <section class="Input-section">
+            <label for="Inputkalkulasi">Cara Kalkulasi</label>
+            <input id="InputHasil" class="Input-field" disabled>
+        </section>    
+        </div>  
+
+        <div>
+            <h2>Cara konversi dari Celcius (*C) ke Fahrenheit</h2>
+            <hr>
+            <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celcius (°C) kali $$9\over5 $$ tambah 32.</p>
+            <p class="eq1">$$ S(°F) = S(°C) \times 9\over5 + 32 $$ atau $$ S(°F) = S(°C) \times 1.8 + 32 $$ </p>
+
+        </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
